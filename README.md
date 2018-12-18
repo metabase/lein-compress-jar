@@ -6,7 +6,8 @@ Typical usage:
 
 ```bash
 lein compress-jar resources/modules/vertica.metabase-driver.jar :compression :xz \
-  :pack200 '{:classes-to-skip "skipped_files_list.txt"}'
+  :compression :xz \
+  :pack200 '{:classes-to-skip "skipped_files_list.txt"}' \
   :out '"resources/modules/vertica.metabase-driver.jar.pack.xz"'
 ```
 
